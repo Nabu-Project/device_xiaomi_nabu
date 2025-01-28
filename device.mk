@@ -88,9 +88,10 @@ PRODUCT_CHARACTERISTICS := tablet,nosdcard
 TARGET_SCREEN_HEIGHT := 2560
 TARGET_SCREEN_WIDTH := 1600
 
+# AAPT config
 PRODUCT_AAPT_CONFIG := normal
-PRODUCT_AAPT_PREF_CONFIG := 420dpi #440 works aswell but do we actually need it?.
-PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
+PRODUCT_AAPT_PREF_CONFIG := xxxhdpi
+PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi
 
 # Boot control
 PRODUCT_PACKAGES += \
