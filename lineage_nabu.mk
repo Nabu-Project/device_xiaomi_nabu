@@ -23,6 +23,7 @@ DEVICE_CODENAME := nabu
 
 # Signing keys (Private).
 ifneq ("$(wildcard vendor/harshit/product.mk)", "")
+$(warning Dev keys were found and will be used.)
 $(call inherit-product, vendor/harshit/product.mk)
 endif
 
