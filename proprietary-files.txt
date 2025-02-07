@@ -92,6 +92,7 @@ vendor/lib/libaudio_log_utils.so
 vendor/lib/libaudioroute_ext.so
 vendor/lib/libresampler.so
 vendor/lib/vendor.qti.hardware.audiohalext@1.0.so
+vendor/lib/libssrec.so
 
 # Audio firmware
 vendor/firmware/BL-cs35l41-dsp1-spk-cali.bin
