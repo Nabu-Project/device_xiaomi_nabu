@@ -1,7 +1,7 @@
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_nabu.mk
+    $(LOCAL_DIR)/clover_nabu.mk
 
 COMMON_LUNCH_CHOICES := \
-    lineage_nabu-user \
-    lineage_nabu-userdebug \
-    lineage_nabu-eng
+    clover_nabu-user \
+    clover_nabu-userdebug \
+    clover_nabu-eng

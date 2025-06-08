@@ -12,25 +12,23 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-# Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
+# Inherit some common Clover stuff.
+$(call inherit-product, vendor/clover/config/common_full_tablet_wifionly.mk)
 
 # Inherit some common AOSP stuff.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
-DEVICE_CODENAME := nabu
-
-# Signing keys (Private).
-ifneq ("$(wildcard vendor/harshit/product.mk)", "")
-$(warning Dev keys were found and will be used.)
-$(call inherit-product, vendor/harshit/product.mk)
-endif
-
 # Inherit device configuration for nabu.
 $(call inherit-product, device/xiaomi/nabu/device.mk)
 
-PRODUCT_NAME := lineage_$(DEVICE_CODENAME)
+# Clover assortment
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+USE_PIXEL_CHARGER := true
+CLOVER_BUILDTYPE := OFFICIAL
+
+
+PRODUCT_NAME := clover_nabu
 PRODUCT_DEVICE := nabu
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MANUFACTURER := Xiaomi
